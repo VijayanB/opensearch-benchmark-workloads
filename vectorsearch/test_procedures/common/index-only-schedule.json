@@ -27,8 +27,4 @@
         "id-field-name": "{{ id_field_name }}"
     },
     "clients": {{ target_index_bulk_indexing_clients | default(1)}}
-},
-{
-    "name" : "refresh-target-index",
-    "operation" : "refresh-target-index"
 }

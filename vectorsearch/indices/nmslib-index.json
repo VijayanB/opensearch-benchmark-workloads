@@ -16,6 +16,9 @@
     "mappings": {
       "dynamic": "strict",
       "properties": {
+        "id": {
+          "type": "keyword"
+        },
         "target_field": {
           "type": "knn_vector",
           "dimension": {{ target_index_dimension }},

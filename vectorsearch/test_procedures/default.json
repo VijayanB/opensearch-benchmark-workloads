@@ -4,7 +4,13 @@
     "default": true,
     "schedule": [
        {{ benchmark.collect(parts="common/index-only-schedule.json") }},
-       {{ benchmark.collect(parts="common/force-merge-schedule.json") }},
+      {
+            "operation": {
+                "name": "wait-a-minute-or-more-after-index",
+                "operation-type": "sleep",
+                "duration": 90
+            }
+        },
        {{ benchmark.collect(parts="common/search-only-schedule.json") }}
     ]
 },

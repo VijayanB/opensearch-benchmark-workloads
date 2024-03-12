@@ -10,14 +10,14 @@
     "target_index_bulk_index_data_set_format": "hdf5",
     "target_index_bulk_index_data_set_corpus": "cohere-10m",
     "target_index_bulk_indexing_clients": 10,
+    "id_field_name": "id",
     
-    "target_index_max_num_segments": 10,
     "hnsw_ef_search": 100,
     "hnsw_ef_construction": 100,
 
     "query_k": 100,
     "query_body": {
-         "docvalue_fields" : ["_id"],
+         "docvalue_fields" : ["id"],
          "stored_fields" : "_none_"
     },
 

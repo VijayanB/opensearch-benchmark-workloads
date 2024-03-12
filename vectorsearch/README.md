@@ -34,6 +34,7 @@ opensearch-benchmark execute-test \
     --workload vectorsearch \
     --workload-params ${PARAMS_FILE} \
     --pipeline benchmark-only \
+    --workload-repository opensearch-benchmark-workloads \
     --kill-running-processes
 ```
 
